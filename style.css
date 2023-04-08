@@ -1,0 +1,201 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navigation bar */
+#vicky{
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+#logo{
+    margin: 3px 0px;
+}
+#logo img{
+    margin: 1px 1px;
+    height: 45px;
+    /* background-color: aqua; */
+}
+#vicky::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#vicky ul{
+    display: contents;
+}
+#vicky ul li{
+    list-style: none;
+    font-size: 0.9rem;
+
+
+}
+#vicky ul li a{
+    display: block;
+    padding: 3px 30px;
+    text-decoration:none;
+    border-radius: 10px;
+    color:white;
+
+}
+#vicky ul li a:hover{
+    background-color: aqua;
+    color: brown;
+}
+.search{
+    padding: 5px 5px;
+
+}
+#input{
+    padding: 5px 5px;
+    color: black;
+
+}
+#btn{
+    padding:5px 5px ;
+    color: black;
+}
+#head{
+    margin: 111px 0px 20px 0px;
+    /* padding: 15px 8px; */
+    color: rgb(217, 14, 14);
+    align-items: center;
+    font-size: 2.5rem;
+}
+#home p{
+    color:black;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 380px;
+    position: relative;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+    background:url('../goodfood.jpg') no-repeat center center/cover;
+}
+ #home button{
+    padding: 8px 25px;
+    border: 2px solid red;
+    background-color: fuchsia;
+    margin: 20px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+#home button:hover{
+    background-color: blue;
+}
+/* service */
+.order h1{
+    text-align: center;
+}
+#service{
+    display: flex;
+    margin: 30px;
+}.box{
+    border: 2px solid royalblue;
+    margin: 0px 10px 0px 10px;
+    padding: 15px 10px 20px 10px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+ h2{
+    text-align: center;
+}
+ p{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#client{
+    height: 100px;
+    position: relative;
+}
+#clientv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: red;
+}
+#clientk img{
+    height: 120px;
+}
+#clientk{
+    margin: 4px;
+}
+#client::before{
+    content: "";
+    height: 180%;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    opacity: .8;
+    background: url('../vicky1.jpg') no-repeat center center/cover;
+}
+.foot{
+    text-align: center;
+}
+/* contact */
+#contact{
+    position: relative;
+    margin: 100px 0px 0px 0px;
+}
+#contact::before{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    /* margin: 50px; */
+    z-index: -1;
+    position: absolute;
+    opacity: .8;
+    background: url('../contact.png') no-repeat center center/cover;
+}
+#contactbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+    margin-top: 10px;
+}
+#contactbox input,
+#contactbox textarea{
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+#contactbox form{
+    width: 40%;
+}
+#contactbox label{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
